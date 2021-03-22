@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="AddWindow"
+            prefHeight="250.0" prefWidth="370.0">
+    <VBox>
+        <HBox>
+            <Label fx:id="loginLabel" text="Login: " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="40.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+                <padding>
+                    <Insets left="55" right="57"/>
+                </padding>
+            </Label>
+            <TextArea fx:id="loginInPutArea" maxHeight="30" maxWidth="200"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+
+        </HBox>
+        <HBox spacing="35">
+            <padding>
+                <Insets left="65"/>
+            </padding>
+            <Label fx:id="hashCodeLabel" text="   Hashcode:" alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="40.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+                <padding>
+                    <Insets left="25" right="25"/>
+                </padding>
+            </Label>
+            <TextArea fx:id="hashCodeInPutArea" maxHeight="30" maxWidth="200"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+        </HBox>
+        <HBox>
+            <Label fx:id="emailLabel" text="Email: " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="40.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+                <padding>
+                    <Insets left="55" right="55"/>
+                </padding>
+            </Label>
+            <TextArea fx:id="emailInPutArea" maxHeight="30" maxWidth="200"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+        </HBox>
+        <HBox spacing="55" alignment="BOTTOM_CENTER">
+            <padding>
+                <Insets left="120"/>
+            </padding>
+            <Button fx:id="Add" prefHeight="58" prefWidth="100" text="Ok"/>
+            <padding>
+                <Insets left="40" bottom="25"/>
+            </padding>
+        </HBox>
+    </VBox>
+</AnchorPane>

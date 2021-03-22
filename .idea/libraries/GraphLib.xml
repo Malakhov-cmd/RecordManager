@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GraphLib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../TesterJava/GraphLib/out/artifacts/GraphLib_jar/GraphLib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

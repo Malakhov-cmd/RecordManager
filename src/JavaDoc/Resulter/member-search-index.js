@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Resulter","l":"getResult()"},{"p":"<Unnamed>","c":"Resulter","l":"isFlag()"},{"p":"<Unnamed>","c":"Resulter","l":"Resulter(String)","url":"%3Cinit%3E(java.lang.String)"},{"p":"<Unnamed>","c":"Resulter","l":"setResult(double, boolean)","url":"setResult(double,boolean)"},{"p":"<Unnamed>","c":"Resulter","l":"start()"}]

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="SeqChecker"
+          prefHeight="350.0" minWidth="600.0">
+    <VBox>
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="7" GridPane.RowSpan="1">
+            <MenuBar fx:id="bar" minWidth="607">
+                <Menu fx:id="seqCheckerInfo" text="Info">
+                    <MenuItem fx:id="seqCheckerExample" text="Example"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="seqCheckerInstruction" text="Instruction"/>
+                </Menu>
+            </MenuBar>
+        </HBox>
+
+
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="7" GridPane.RowSpan="6"
+              alignment="CENTER">
+            <VBox>
+                <padding>
+                    <Insets top="45" bottom="25"/>
+                </padding>
+                <Label text="Enter data: " GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="LEFT"/>
+                <padding>
+                    <Insets top="15" bottom="25"/>
+                </padding>
+                <TextArea fx:id="seqArea" maxHeight="375" maxWidth="475"/>
+            </VBox>
+            <VBox alignment="BOTTOM_RIGHT" spacing="20">
+                <padding>
+                    <Insets top="25" bottom="25"/>
+                </padding>
+                <Button fx:id="seqAreaRefresh" minWidth="55" text="Refresh" GridPane.rowIndex="6" GridPane.columnIndex="7"/>
+                <Button fx:id="seqEnter" minWidth="55" text="Ok" GridPane.rowIndex="7" GridPane.columnIndex="7"/>
+
+                <padding>
+                    <Insets left="25" bottom="25"/>
+                </padding>
+            </VBox>
+
+        </HBox>
+
+        <HBox alignment="BOTTOM_CENTER">
+            <VBox alignment="BOTTOM_RIGHT">
+                <Line startY="529" endX="600" endY="529" fill="brown" stroke="brown" strokeWidth="6"/>
+                <padding>
+                    <Insets bottom="25" top="25"/>
+                </padding>
+                <Label fx:id="creator" text="Check service      " alignment="BOTTOM_RIGHT">
+                    <font>
+                        <Font size="20.0"/>
+                        <Font name="Calibri Light"/>
+                    </font>
+                </Label>
+            </VBox>
+        </HBox>
+    </VBox>
+</GridPane>

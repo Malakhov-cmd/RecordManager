@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FileBaseFX"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox>
+        <HBox>
+            <MenuBar fx:id="bar" minWidth="607">
+                <Menu fx:id="fileBaseInfo" text="Info">
+                    <MenuItem fx:id="fileBaseExample" text="Example"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem fx:id="fileBaseInstruction" text="Instruction"/>
+                </Menu>
+            </MenuBar>
+        </HBox>
+        <TableView fx:id="table" prefWidth="600" maxHeight="300">
+        </TableView>
+        <VBox alignment="BOTTOM_RIGHT" spacing="20">
+            <padding>
+                <Insets top="25" bottom="25"/>
+            </padding>
+            <padding>
+                <Insets left="25" top="25"/>
+            </padding>
+            <HBox alignment="BOTTOM_CENTER" spacing="35">
+                <Button fx:id="addRecord" minWidth="135" minHeight="45" text="Add"/>
+                <Button fx:id="deleteRecord" minWidth="135" minHeight="45" text="Delete"/>
+                <Button fx:id="back" minWidth="135" minHeight="45" text="Back"/>
+            </HBox>
+
+            <padding>
+                <Insets bottom="35" top="25"/>
+            </padding>
+            <Line startY="529" endX="600" endY="529" fill="brown" stroke="brown" strokeWidth="6"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+            <Label fx:id="creator" text="File manager service      " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="20.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+            </Label>
+        </VBox>
+    </VBox>
+</AnchorPane>

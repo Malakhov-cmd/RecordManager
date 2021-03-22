@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"Updater","l":"logAreaStatic"},{"p":"<Unnamed>","c":"Updater","l":"updateLog(String)","url":"updateLog(java.lang.String)"},{"p":"<Unnamed>","c":"Updater","l":"Updater()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"Updater","l":"Updater(TextArea)","url":"%3Cinit%3E(javafx.scene.control.TextArea)"}]

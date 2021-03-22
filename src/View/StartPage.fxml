@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="StartPage"
+          prefHeight="250.0" prefWidth="600.0">
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="7" GridPane.RowSpan="1">
+        <MenuBar fx:id="bar" minWidth="600">
+            <Menu fx:id="checkingTask" text="Enter sequence">
+                <MenuItem fx:id="enterSeq" text="Enter sequence"/>
+                <SeparatorMenuItem/>
+                <MenuItem fx:id="infoSeq" text="Instruction"/>
+            </Menu>
+            <Menu fx:id="fileFunctionality" text="File Functionality">
+                <MenuItem fx:id="enterRecord" text="Record Manager"/>
+            </Menu>
+            <Menu fx:id="lowLevel" text="Assembly">
+                <MenuItem fx:id="enterAssembly" text="Assembly multiplier"/>
+            </Menu>
+            <Menu fx:id="info" text="Info">
+                <MenuItem fx:id="aboutProgram" text="About program"/>
+                <SeparatorMenuItem/>
+                <MenuItem fx:id="aboutProgrammist" text="About programist"/>
+            </Menu>
+        </MenuBar>
+    </HBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="7" GridPane.RowSpan="6"
+          alignment="CENTER">
+        <TextArea fx:id="logArea" maxHeight="200" maxWidth="600"/>
+
+        <VBox alignment="BOTTOM_RIGHT">
+            <Line startY="529" endX="599" endY="529" fill="brown" stroke="brown" strokeWidth="6"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+            <Label fx:id="creator" text="Start page      " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="20.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+            </Label>
+        </VBox>
+    </VBox>
+</GridPane>

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"MultyJNI","l":"calc(int, int)","url":"calc(int,int)"},{"p":"<Unnamed>","c":"MultyJNI","l":"MultyJNI()","url":"%3Cinit%3E()"}]

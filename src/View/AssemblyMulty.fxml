@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.shape.Line?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="AssemblyMulty"
+          prefHeight="200.0" prefWidth="400.0">
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="7" GridPane.RowSpan="1">
+        <MenuBar fx:id="bar" minWidth="600">
+            <Menu fx:id="AssemblyBaseInfo" text="Info">
+                <MenuItem fx:id="AssemblyExample" text="Example"/>
+                <SeparatorMenuItem/>
+                <MenuItem fx:id="AssemblyInstruction" text="Instruction"/>
+            </Menu>
+        </MenuBar>
+    </HBox>
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="7" GridPane.RowSpan="6"
+          alignment="CENTER">
+        <HBox>
+            <Label fx:id="xLabel" text="X: " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="40.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+                <padding>
+                    <Insets left="55" right="55"/>
+                </padding>
+            </Label>
+            <TextArea fx:id="xInPutArea" maxHeight="30" maxWidth="100"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+
+        </HBox>
+        <HBox spacing="35">
+            <padding>
+                <Insets left="65"/>
+            </padding>
+            <Label fx:id="yLabel" text="Y: " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="40.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+                <padding>
+                    <Insets left="55" right="25"/>
+                </padding>
+            </Label>
+            <TextArea fx:id="yInPutArea" maxHeight="30" maxWidth="100"/>
+            <HBox spacing="55">
+            <Button fx:id="startCalc" prefHeight="38" prefWidth="60" text="Ok"/>
+            </HBox>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+        </HBox>
+        <VBox alignment="BOTTOM_RIGHT">
+            <Line startY="529" endX="599" endY="529" fill="brown" stroke="brown" strokeWidth="6"/>
+            <padding>
+                <Insets bottom="25" top="25"/>
+            </padding>
+            <Label fx:id="creator" text="Assembly page      " alignment="BOTTOM_RIGHT">
+                <font>
+                    <Font size="20.0"/>
+                    <Font name="Calibri Light"/>
+                </font>
+            </Label>
+        </VBox>
+    </VBox>
+</GridPane>
